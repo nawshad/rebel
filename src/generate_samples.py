@@ -6,14 +6,16 @@ from torch import nn
 import pandas as pd
 from torch.nn.utils.rnn import pad_sequence
 import wandb
+
+
 class GenerateTextSamplesCallback(Callback):  # pragma: no cover
     """
     PL Callback to generate triplets along training
     """
 
     def __init__(
-        self,
-        logging_batch_interval
+            self,
+            logging_batch_interval
     ):
         """
         Args:
@@ -23,13 +25,13 @@ class GenerateTextSamplesCallback(Callback):  # pragma: no cover
         self.logging_batch_interval = logging_batch_interval
 
     def on_train_batch_end(
-        self,
-        trainer: Trainer,
-        pl_module: LightningModule,
-        outputs: Sequence,
-        batch: Sequence,
-        batch_idx: int,
-        dataloader_idx: int,
+            self,
+            trainer: Trainer,
+            pl_module: LightningModule,
+            outputs: Sequence,
+            batch: Sequence,
+            batch_idx: int,
+            dataloader_idx: int,
     ) -> None:
         wandb_table = wandb.Table(columns=["Source", "Pred", "Gold"])
         # pl_module.logger.info("Executing translation callback")
@@ -46,7 +48,7 @@ class GenerateTextSamplesCallback(Callback):  # pragma: no cover
         }
         pl_module.eval()
 
-        decoder_inputs = torch.roll(labels, 1, 1)[:,0:2]
+        decoder_inputs = torch.roll(labels, 1, 1)[:, 0:2]
         decoder_inputs[:, 0] = 0
         generated_tokens = pl_module.model.generate(
             batch["input_ids"].to(pl_module.model.device),

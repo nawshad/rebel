@@ -33,62 +33,69 @@ arg_to_scheduler = {
 }
 
 relations_tacred = {'no_relation': 'no relation',
-    'org:alternate_names': 'alternate name',
-    'org:city_of_branch': 'headquarters location', 
-    'org:country_of_branch': 'country of headquarters',
-    'org:dissolved': 'dissolved',
-    'org:founded_by': 'founded by',
-    'org:founded': 'inception',
-    'org:member_of': 'member of',
-    'org:members': 'has member',
-    'org:number_of_employees/members': 'member count',
-    'org:political/religious_affiliation': 'affiliation',
-    'org:shareholders': 'owned by',
-    'org:stateorprovince_of_branch': 'state of headquarters',
-    'org:top_members/employees': 'top members',
-    'org:website': 'website',
-    'per:age': 'age',
-    'per:cause_of_death': 'cause of death',
-    'per:charges': 'charge',
-    'per:children': 'child',
-    'per:cities_of_residence': 'city of residence',
-    'per:city_of_birth': 'place of birth',
-    'per:city_of_death': 'place of death',
-    'per:countries_of_residence': 'country of residence',
-    'per:country_of_birth': 'country of birth',
-    'per:country_of_death': 'country of death',
-    'per:date_of_birth': 'date of birth',
-    'per:date_of_death': 'date of death',
-    'per:employee_of': 'employer',
-    'per:identity': 'identity',
-    'per:origin': 'country of citizenship',
-    'per:other_family': 'relative',
-    'per:parents': 'father',
-    'per:religion': 'religion',
-    'per:schools_attended': 'educated at',
-    'per:siblings': 'sibling',
-    'per:spouse': 'spouse',
-    'per:stateorprovince_of_birth': 'state of birth',
-    'per:stateorprovince_of_death': 'state of death',
-    'per:stateorprovinces_of_residence': 'state of residence',
-    'per:title': 'position held'}
+                    'org:alternate_names': 'alternate name',
+                    'org:city_of_branch': 'headquarters location',
+                    'org:country_of_branch': 'country of headquarters',
+                    'org:dissolved': 'dissolved',
+                    'org:founded_by': 'founded by',
+                    'org:founded': 'inception',
+                    'org:member_of': 'member of',
+                    'org:members': 'has member',
+                    'org:number_of_employees/members': 'member count',
+                    'org:political/religious_affiliation': 'affiliation',
+                    'org:shareholders': 'owned by',
+                    'org:stateorprovince_of_branch': 'state of headquarters',
+                    'org:top_members/employees': 'top members',
+                    'org:website': 'website',
+                    'per:age': 'age',
+                    'per:cause_of_death': 'cause of death',
+                    'per:charges': 'charge',
+                    'per:children': 'child',
+                    'per:cities_of_residence': 'city of residence',
+                    'per:city_of_birth': 'place of birth',
+                    'per:city_of_death': 'place of death',
+                    'per:countries_of_residence': 'country of residence',
+                    'per:country_of_birth': 'country of birth',
+                    'per:country_of_death': 'country of death',
+                    'per:date_of_birth': 'date of birth',
+                    'per:date_of_death': 'date of death',
+                    'per:employee_of': 'employer',
+                    'per:identity': 'identity',
+                    'per:origin': 'country of citizenship',
+                    'per:other_family': 'relative',
+                    'per:parents': 'father',
+                    'per:religion': 'religion',
+                    'per:schools_attended': 'educated at',
+                    'per:siblings': 'sibling',
+                    'per:spouse': 'spouse',
+                    'per:stateorprovince_of_birth': 'state of birth',
+                    'per:stateorprovince_of_death': 'state of death',
+                    'per:stateorprovinces_of_residence': 'state of residence',
+                    'per:title': 'position held'}
 
-relations_nyt = {'/people/person/nationality': 'country of citizenship', '/sports/sports_team/location': 'headquarters location', 
-                    '/location/country/administrative_divisions': 'contains administrative territorial entity', '/business/company/major_shareholders': 'shareholders', 
-                    '/people/ethnicity/people': 'country of origin', '/people/ethnicity/geographic_distribution': 'denonym', 
-                    '/business/company_shareholder/major_shareholder_of': 'major shareholder', '/location/location/contains': 'location',
-                    '/business/company/founders': 'founded by', '/business/person/company': 'employer', '/business/company/advisors': 'advisors', 
-                    '/people/deceased_person/place_of_death': 'place of death', '/business/company/industry': 'industry', 
-                    '/people/person/ethnicity': 'ethnicity', '/people/person/place_of_birth': 'place of birth', 
-                    '/location/administrative_division/country': 'country', '/people/person/place_lived': 'residence', 
-                    '/sports/sports_team_location/teams': 'member of sports team', '/people/person/children': 'child', 
-                    '/people/person/religion': 'religion', '/location/neighborhood/neighborhood_of': 'neighborhood of', 
-                    '/location/country/capital': 'capital', '/business/company/place_founded': 'location of formation', 
-                    '/people/person/profession': 'occupation'}
+relations_nyt = {'/people/person/nationality': 'country of citizenship',
+                 '/sports/sports_team/location': 'headquarters location',
+                 '/location/country/administrative_divisions': 'contains administrative territorial entity',
+                 '/business/company/major_shareholders': 'shareholders',
+                 '/people/ethnicity/people': 'country of origin',
+                 '/people/ethnicity/geographic_distribution': 'denonym',
+                 '/business/company_shareholder/major_shareholder_of': 'major shareholder',
+                 '/location/location/contains': 'location',
+                 '/business/company/founders': 'founded by', '/business/person/company': 'employer',
+                 '/business/company/advisors': 'advisors',
+                 '/people/deceased_person/place_of_death': 'place of death', '/business/company/industry': 'industry',
+                 '/people/person/ethnicity': 'ethnicity', '/people/person/place_of_birth': 'place of birth',
+                 '/location/administrative_division/country': 'country', '/people/person/place_lived': 'residence',
+                 '/sports/sports_team_location/teams': 'member of sports team', '/people/person/children': 'child',
+                 '/people/person/religion': 'religion', '/location/neighborhood/neighborhood_of': 'neighborhood of',
+                 '/location/country/capital': 'capital', '/business/company/place_founded': 'location of formation',
+                 '/people/person/profession': 'occupation'}
+
 
 class BasePLModule(pl.LightningModule):
 
-    def __init__(self, conf, config: AutoConfig, tokenizer: AutoTokenizer, model: AutoModelForSeq2SeqLM, *args, **kwargs) -> None:
+    def __init__(self, conf, config: AutoConfig, tokenizer: AutoTokenizer, model: AutoModelForSeq2SeqLM, *args,
+                 **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.save_hyperparameters(conf)
         self.tokenizer = tokenizer
@@ -118,17 +125,19 @@ class BasePLModule(pl.LightningModule):
         if self.hparams.label_smoothing == 0:
             if self.hparams is not None and self.hparams.ignore_pad_token_for_loss:
                 # force training to ignore pad token
-                outputs = self.model(**inputs, use_cache=False, return_dict = True, output_hidden_states=True)
+                outputs = self.model(**inputs, use_cache=False, return_dict=True, output_hidden_states=True)
                 logits = outputs['logits']
-                loss = self.loss_fn(logits.view(-1, logits.shape[-1]), labels.view(-1))#, ignore_index=self.config.pad_token_id)
+                loss = self.loss_fn(logits.view(-1, logits.shape[-1]),
+                                    labels.view(-1))  # , ignore_index=self.config.pad_token_id)
             else:
                 # compute usual loss via models
-                outputs = self.model(**inputs, labels=labels, use_cache=False, return_dict = True, output_hidden_states=True)
+                outputs = self.model(**inputs, labels=labels, use_cache=False, return_dict=True,
+                                     output_hidden_states=True)
                 loss = outputs['loss']
                 logits = outputs['logits']
         else:
             # compute label smoothed loss
-            outputs = self.model(**inputs, use_cache=False, return_dict = True, output_hidden_states=True)
+            outputs = self.model(**inputs, use_cache=False, return_dict=True, output_hidden_states=True)
             logits = outputs['logits']
             lprobs = torch.nn.functional.log_softmax(logits, dim=-1)
             # labels = torch.where(labels != -100, labels, self.config.pad_token_id)
@@ -149,7 +158,7 @@ class BasePLModule(pl.LightningModule):
         if 'loss_aux' in forward_output:
             self.log('loss_classifier', forward_output['loss_aux'])
             return forward_output['loss'] + forward_output['loss_aux']
-        return forward_output['loss']# + forward_output['loss_aux']
+        return forward_output['loss']  # + forward_output['loss_aux']
 
     def _pad_tensors_to_max_len(self, tensor, max_length):
         # If PAD token is not defined at least EOS token has to be defined
@@ -167,9 +176,9 @@ class BasePLModule(pl.LightningModule):
         return padded_tensor
 
     def generate_triples(self,
-        batch,
-        labels,
-    ) -> None:
+                         batch,
+                         labels,
+                         ) -> None:
 
         gen_kwargs = {
             "max_length": self.hparams.val_max_target_length
@@ -184,26 +193,34 @@ class BasePLModule(pl.LightningModule):
         generated_tokens = self.model.generate(
             batch["input_ids"].to(self.model.device),
             attention_mask=batch["attention_mask"].to(self.model.device),
-            use_cache = True,
+            use_cache=True,
             **gen_kwargs,
         )
 
         decoded_preds = self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=False)
-        decoded_labels = self.tokenizer.batch_decode(torch.where(labels != -100, labels, self.config.pad_token_id), skip_special_tokens=False)
+        decoded_labels = self.tokenizer.batch_decode(torch.where(labels != -100, labels, self.config.pad_token_id),
+                                                     skip_special_tokens=False)
         if self.hparams.dataset_name.split('/')[-1] == 'conll04_typed.py':
-            return [extract_triplets_typed(rel) for rel in decoded_preds], [extract_triplets_typed(rel) for rel in decoded_labels]
+            return [extract_triplets_typed(rel) for rel in decoded_preds], [extract_triplets_typed(rel) for rel in
+                                                                            decoded_labels]
         elif self.hparams.dataset_name.split('/')[-1] == 'nyt_typed.py':
-            return [extract_triplets_typed(rel, {'<loc>': 'LOCATION', '<org>': 'ORGANIZATION', '<per>': 'PERSON'}) for rel in decoded_preds], [extract_triplets_typed(rel, {'<loc>': 'LOCATION', '<org>': 'ORGANIZATION', '<per>': 'PERSON'}) for rel in decoded_labels]
+            return [extract_triplets_typed(rel, {'<loc>': 'LOCATION', '<org>': 'ORGANIZATION', '<per>': 'PERSON'}) for
+                    rel in decoded_preds], [
+                extract_triplets_typed(rel, {'<loc>': 'LOCATION', '<org>': 'ORGANIZATION', '<per>': 'PERSON'}) for rel
+                in decoded_labels]
         elif self.hparams.dataset_name.split('/')[-1] == 'docred_typed.py':
-            return [extract_triplets_typed(rel, {'<loc>': 'LOC', '<misc>': 'MISC', '<per>': 'PER', '<num>': 'NUM', '<time>': 'TIME', '<org>': 'ORG'}) for rel in decoded_preds], [extract_triplets_typed(rel, {'<loc>': 'LOC', '<misc>': 'MISC', '<per>': 'PER', '<num>': 'NUM', '<time>': 'TIME', '<org>': 'ORG'}) for rel in decoded_labels]
+            return [extract_triplets_typed(rel, {'<loc>': 'LOC', '<misc>': 'MISC', '<per>': 'PER', '<num>': 'NUM',
+                                                 '<time>': 'TIME', '<org>': 'ORG'}) for rel in decoded_preds], [
+                extract_triplets_typed(rel, {'<loc>': 'LOC', '<misc>': 'MISC', '<per>': 'PER', '<num>': 'NUM',
+                                             '<time>': 'TIME', '<org>': 'ORG'}) for rel in decoded_labels]
         return [extract_triplets(rel) for rel in decoded_preds], [extract_triplets(rel) for rel in decoded_labels]
 
     def generate_samples(self,
-        # model,
-        # tokenizer,
-        batch,
-        labels,
-    ) -> None:
+                         # model,
+                         # tokenizer,
+                         batch,
+                         labels,
+                         ) -> None:
         # labels = batch.pop("labels")
         # pick the last batch and logits
         # x, y = batch
@@ -220,36 +237,36 @@ class BasePLModule(pl.LightningModule):
         relation_start = torch.roll(relation_start, 1, 1)
         relation_start = torch.cumsum(relation_start, dim=1)
         labels_decoder = torch.where(relation_start == 1, self.tokenizer.pad_token_id, labels)
-        labels_decoder[:,-1] = 2
+        labels_decoder[:, -1] = 2
         labels_decoder = torch.roll(labels_decoder, 1, 1)
 
         generated_tokens = self.model.generate(
             batch["input_ids"].to(self.model.device),
             attention_mask=batch["attention_mask"].to(self.model.device),
             decoder_input_ids=labels_decoder.to(self.model.device),
-            use_cache = False,
+            use_cache=False,
             **gen_kwargs,
         )
         relation_start = generated_tokens == 50265
         relation_start = torch.roll(relation_start, 2, 1)
 
-        decoded_preds = self.tokenizer.batch_decode(generated_tokens[relation_start==1], skip_special_tokens=False)
+        decoded_preds = self.tokenizer.batch_decode(generated_tokens[relation_start == 1], skip_special_tokens=False)
 
         return [rel.strip() for rel in decoded_preds]
 
     def forward_samples(self,
-        # model,
-        # tokenizer,
-        batch,
-        labels,
-    ) -> None:
+                        # model,
+                        # tokenizer,
+                        batch,
+                        labels,
+                        ) -> None:
         relation_start = labels == 50265
         relation_start = torch.roll(relation_start, 2, 1)
         labels = torch.where(torch.cumsum(relation_start, dim=1) == 1, self.tokenizer.pad_token_id, labels)
-        labels[:,-1] = 0
+        labels[:, -1] = 0
         labels = torch.roll(labels, 1, 1)
         min_padding = min(torch.sum((labels == 1).int(), 1))
-        labels_decoder = torch.randint(60000,(labels.shape[0], labels.shape[1] - min_padding))
+        labels_decoder = torch.randint(60000, (labels.shape[0], labels.shape[1] - min_padding))
         labels_decoder = labels[:, :-min_padding]
         outputs = self.model(
             batch["input_ids"].to(self.model.device),
@@ -257,7 +274,7 @@ class BasePLModule(pl.LightningModule):
             decoder_input_ids=labels_decoder.to(self.model.device),
             return_dict=True,
         )
-        next_token_logits = outputs.logits[relation_start[:,: -min_padding]==1]
+        next_token_logits = outputs.logits[relation_start[:, : -min_padding] == 1]
         next_tokens = torch.argmax(next_token_logits, dim=-1)
 
         decoded_preds = self.tokenizer.batch_decode(next_tokens, skip_special_tokens=False)
@@ -298,7 +315,8 @@ class BasePLModule(pl.LightningModule):
             self.log('val_loss', forward_output['loss'])
             return
 
-        forward_output['logits'] = generated_tokens.detach() if self.hparams.predict_with_generate else forward_output['logits'].detach()
+        forward_output['logits'] = generated_tokens.detach() if self.hparams.predict_with_generate else forward_output[
+            'logits'].detach()
 
         if labels.shape[-1] < gen_kwargs["max_length"]:
             forward_output['labels'] = self._pad_tensors_to_max_len(labels, gen_kwargs["max_length"])
@@ -306,7 +324,8 @@ class BasePLModule(pl.LightningModule):
             forward_output['labels'] = labels
 
         if self.hparams.predict_with_generate:
-            metrics = self.compute_metrics(forward_output['logits'].detach().cpu(), forward_output['labels'].detach().cpu())
+            metrics = self.compute_metrics(forward_output['logits'].detach().cpu(),
+                                           forward_output['labels'].detach().cpu())
         else:
             metrics = {}
         metrics['val_loss'] = forward_output['loss']
@@ -350,7 +369,8 @@ class BasePLModule(pl.LightningModule):
             self.log('test_loss', forward_output['loss'])
             return
 
-        forward_output['logits'] = generated_tokens.detach() if self.hparams.predict_with_generate else forward_output['logits'].detach()
+        forward_output['logits'] = generated_tokens.detach() if self.hparams.predict_with_generate else forward_output[
+            'logits'].detach()
 
         if labels.shape[-1] < gen_kwargs["max_length"]:
             forward_output['labels'] = self._pad_tensors_to_max_len(labels, gen_kwargs["max_length"])
@@ -358,7 +378,8 @@ class BasePLModule(pl.LightningModule):
             forward_output['labels'] = labels
 
         if self.hparams.predict_with_generate:
-            metrics = self.compute_metrics(forward_output['logits'].detach().cpu(), forward_output['labels'].detach().cpu())
+            metrics = self.compute_metrics(forward_output['logits'].detach().cpu(),
+                                           forward_output['labels'].detach().cpu())
         else:
             metrics = {}
         metrics['test_loss'] = forward_output['loss']
@@ -374,24 +395,71 @@ class BasePLModule(pl.LightningModule):
 
     def validation_epoch_end(self, output: dict) -> Any:
         if self.hparams.relations_file:
-            relations_df = pd.read_csv(self.hparams.relations_file, header = None, sep='\t')
+            relations_df = pd.read_csv(self.hparams.relations_file, header=None, sep='\t')
             relations = list(relations_df[0])
-            scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], relations)
+            scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                     [item for pred in output for item in pred['labels']], relations)
             self.log('val_prec_micro', precision)
             self.log('val_recall_micro', recall)
             self.log('val_F1_micro', f1)
         elif not 'tacred' in self.hparams.dataset_name.split('/')[-1]:
             if self.hparams.dataset_name.split('/')[-1] == 'conll04_typed.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['killed by', 'residence', 'location', 'headquarters location', 'employer'], "strict")
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['killed by', 'residence', 'location', 'headquarters location',
+                                                          'employer'], "strict")
             elif self.hparams.dataset_name.split('/')[-1] == 'ade.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['has effect'])
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['has effect'])
             elif self.hparams.dataset_name.split('/')[-1] == 'nyt_typed.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], list(relations_nyt.values()), "strict")
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         list(relations_nyt.values()), "strict")
             elif self.hparams.dataset_name.split('/')[-1] == 'docred_typed.py':
-                relations_docred = {"P6": "head of government", "P17": "country", "P19": "place of birth", "P20": "place of death", "P22": "father", "P25": "mother", "P26": "spouse", "P27": "country of citizenship", "P30": "continent", "P31": "instance of", "P35": "head of state", "P36": "capital", "P37": "official language", "P39": "position held", "P40": "child", "P50": "author", "P54": "member of sports team", "P57": "director", "P58": "screenwriter", "P69": "educated at", "P86": "composer", "P102": "member of political party", "P108": "employer", "P112": "founded by", "P118": "league", "P123": "publisher", "P127": "owned by", "P131": "located in the administrative territorial entity", "P136": "genre", "P137": "operator", "P140": "religion", "P150": "contains administrative territorial entity", "P155": "follows", "P156": "followed by", "P159": "headquarters location", "P161": "cast member", "P162": "producer", "P166": "award received", "P170": "creator", "P171": "parent taxon", "P172": "ethnic group", "P175": "performer", "P176": "manufacturer", "P178": "developer", "P179": "series", "P190": "sister city", "P194": "legislative body", "P205": "basin country", "P206": "located in or next to body of water", "P241": "military branch", "P264": "record label", "P272": "production company", "P276": "location", "P279": "subclass of", "P355": "subsidiary", "P361": "part of", "P364": "original language of work", "P400": "platform", "P403": "mouth of the watercourse", "P449": "original network", "P463": "member of", "P488": "chairperson", "P495": "country of origin", "P527": "has part", "P551": "residence", "P569": "date of birth", "P570": "date of death", "P571": "inception", "P576": "dissolved, abolished or demolished", "P577": "publication date", "P580": "start time", "P582": "end time", "P585": "point in time", "P607": "conflict", "P674": "characters", "P676": "lyrics by", "P706": "located on terrain feature", "P710": "participant", "P737": "influenced by", "P740": "location of formation", "P749": "parent organization", "P800": "notable work", "P807": "separated from", "P840": "narrative location", "P937": "work location", "P1001": "applies to jurisdiction", "P1056": "product or material produced", "P1198": "unemployment rate", "P1336": "territory claimed by", "P1344": "participant of", "P1365": "replaces", "P1366": "replaced by", "P1376": "capital of", "P1412": "languages spoken, written or signed", "P1441": "present in work", "P3373": "sibling"}
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], list(relations_docred.values()), "strict")            
+                relations_docred = {"P6": "head of government", "P17": "country", "P19": "place of birth",
+                                    "P20": "place of death", "P22": "father", "P25": "mother", "P26": "spouse",
+                                    "P27": "country of citizenship", "P30": "continent", "P31": "instance of",
+                                    "P35": "head of state", "P36": "capital", "P37": "official language",
+                                    "P39": "position held", "P40": "child", "P50": "author",
+                                    "P54": "member of sports team", "P57": "director", "P58": "screenwriter",
+                                    "P69": "educated at", "P86": "composer", "P102": "member of political party",
+                                    "P108": "employer", "P112": "founded by", "P118": "league", "P123": "publisher",
+                                    "P127": "owned by", "P131": "located in the administrative territorial entity",
+                                    "P136": "genre", "P137": "operator", "P140": "religion",
+                                    "P150": "contains administrative territorial entity", "P155": "follows",
+                                    "P156": "followed by", "P159": "headquarters location", "P161": "cast member",
+                                    "P162": "producer", "P166": "award received", "P170": "creator",
+                                    "P171": "parent taxon", "P172": "ethnic group", "P175": "performer",
+                                    "P176": "manufacturer", "P178": "developer", "P179": "series",
+                                    "P190": "sister city", "P194": "legislative body", "P205": "basin country",
+                                    "P206": "located in or next to body of water", "P241": "military branch",
+                                    "P264": "record label", "P272": "production company", "P276": "location",
+                                    "P279": "subclass of", "P355": "subsidiary", "P361": "part of",
+                                    "P364": "original language of work", "P400": "platform",
+                                    "P403": "mouth of the watercourse", "P449": "original network", "P463": "member of",
+                                    "P488": "chairperson", "P495": "country of origin", "P527": "has part",
+                                    "P551": "residence", "P569": "date of birth", "P570": "date of death",
+                                    "P571": "inception", "P576": "dissolved, abolished or demolished",
+                                    "P577": "publication date", "P580": "start time", "P582": "end time",
+                                    "P585": "point in time", "P607": "conflict", "P674": "characters",
+                                    "P676": "lyrics by", "P706": "located on terrain feature", "P710": "participant",
+                                    "P737": "influenced by", "P740": "location of formation",
+                                    "P749": "parent organization", "P800": "notable work", "P807": "separated from",
+                                    "P840": "narrative location", "P937": "work location",
+                                    "P1001": "applies to jurisdiction", "P1056": "product or material produced",
+                                    "P1198": "unemployment rate", "P1336": "territory claimed by",
+                                    "P1344": "participant of", "P1365": "replaces", "P1366": "replaced by",
+                                    "P1376": "capital of", "P1412": "languages spoken, written or signed",
+                                    "P1441": "present in work", "P3373": "sibling"}
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         list(relations_docred.values()), "strict")
             else:
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['killed by', 'residence', 'location', 'headquarters location', 'employer'])
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['killed by', 'residence', 'location', 'headquarters location',
+                                                          'employer'])
             self.log('val_prec_micro', precision)
             self.log('val_recall_micro', recall)
             self.log('val_F1_micro', f1)
@@ -412,24 +480,71 @@ class BasePLModule(pl.LightningModule):
 
     def test_epoch_end(self, output: dict) -> Any:
         if not self.hparams.finetune and self.hparams.relations_file:
-            relations_df = pd.read_csv(self.hparams.relations_file, header = None, sep='\t')
+            relations_df = pd.read_csv(self.hparams.relations_file, header=None, sep='\t')
             relations = list(relations_df[0])
-            scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], relations)
+            scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                     [item for pred in output for item in pred['labels']], relations)
             self.log('test_prec_micro', precision)
             self.log('test_recall_micro', recall)
             self.log('test_F1_micro', f1)
         elif not 'tacred' in self.hparams.dataset_name.split('/')[-1]:
             if self.hparams.dataset_name.split('/')[-1] == 'conll04_typed.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['killed by', 'residence', 'location', 'headquarters location', 'employer'], "strict")
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['killed by', 'residence', 'location', 'headquarters location',
+                                                          'employer'], "strict")
             elif self.hparams.dataset_name.split('/')[-1] == 'ade.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['has effect'])
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['has effect'])
             elif self.hparams.dataset_name.split('/')[-1] == 'nyt_typed.py':
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], list(relations_nyt.values()), "strict")
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         list(relations_nyt.values()), "strict")
             elif self.hparams.dataset_name.split('/')[-1] == 'docred_typed.py':
-                relations_docred = {"P6": "head of government", "P17": "country", "P19": "place of birth", "P20": "place of death", "P22": "father", "P25": "mother", "P26": "spouse", "P27": "country of citizenship", "P30": "continent", "P31": "instance of", "P35": "head of state", "P36": "capital", "P37": "official language", "P39": "position held", "P40": "child", "P50": "author", "P54": "member of sports team", "P57": "director", "P58": "screenwriter", "P69": "educated at", "P86": "composer", "P102": "member of political party", "P108": "employer", "P112": "founded by", "P118": "league", "P123": "publisher", "P127": "owned by", "P131": "located in the administrative territorial entity", "P136": "genre", "P137": "operator", "P140": "religion", "P150": "contains administrative territorial entity", "P155": "follows", "P156": "followed by", "P159": "headquarters location", "P161": "cast member", "P162": "producer", "P166": "award received", "P170": "creator", "P171": "parent taxon", "P172": "ethnic group", "P175": "performer", "P176": "manufacturer", "P178": "developer", "P179": "series", "P190": "sister city", "P194": "legislative body", "P205": "basin country", "P206": "located in or next to body of water", "P241": "military branch", "P264": "record label", "P272": "production company", "P276": "location", "P279": "subclass of", "P355": "subsidiary", "P361": "part of", "P364": "original language of work", "P400": "platform", "P403": "mouth of the watercourse", "P449": "original network", "P463": "member of", "P488": "chairperson", "P495": "country of origin", "P527": "has part", "P551": "residence", "P569": "date of birth", "P570": "date of death", "P571": "inception", "P576": "dissolved, abolished or demolished", "P577": "publication date", "P580": "start time", "P582": "end time", "P585": "point in time", "P607": "conflict", "P674": "characters", "P676": "lyrics by", "P706": "located on terrain feature", "P710": "participant", "P737": "influenced by", "P740": "location of formation", "P749": "parent organization", "P800": "notable work", "P807": "separated from", "P840": "narrative location", "P937": "work location", "P1001": "applies to jurisdiction", "P1056": "product or material produced", "P1198": "unemployment rate", "P1336": "territory claimed by", "P1344": "participant of", "P1365": "replaces", "P1366": "replaced by", "P1376": "capital of", "P1412": "languages spoken, written or signed", "P1441": "present in work", "P3373": "sibling"}
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], list(relations_docred.values()), "strict")            
+                relations_docred = {"P6": "head of government", "P17": "country", "P19": "place of birth",
+                                    "P20": "place of death", "P22": "father", "P25": "mother", "P26": "spouse",
+                                    "P27": "country of citizenship", "P30": "continent", "P31": "instance of",
+                                    "P35": "head of state", "P36": "capital", "P37": "official language",
+                                    "P39": "position held", "P40": "child", "P50": "author",
+                                    "P54": "member of sports team", "P57": "director", "P58": "screenwriter",
+                                    "P69": "educated at", "P86": "composer", "P102": "member of political party",
+                                    "P108": "employer", "P112": "founded by", "P118": "league", "P123": "publisher",
+                                    "P127": "owned by", "P131": "located in the administrative territorial entity",
+                                    "P136": "genre", "P137": "operator", "P140": "religion",
+                                    "P150": "contains administrative territorial entity", "P155": "follows",
+                                    "P156": "followed by", "P159": "headquarters location", "P161": "cast member",
+                                    "P162": "producer", "P166": "award received", "P170": "creator",
+                                    "P171": "parent taxon", "P172": "ethnic group", "P175": "performer",
+                                    "P176": "manufacturer", "P178": "developer", "P179": "series",
+                                    "P190": "sister city", "P194": "legislative body", "P205": "basin country",
+                                    "P206": "located in or next to body of water", "P241": "military branch",
+                                    "P264": "record label", "P272": "production company", "P276": "location",
+                                    "P279": "subclass of", "P355": "subsidiary", "P361": "part of",
+                                    "P364": "original language of work", "P400": "platform",
+                                    "P403": "mouth of the watercourse", "P449": "original network", "P463": "member of",
+                                    "P488": "chairperson", "P495": "country of origin", "P527": "has part",
+                                    "P551": "residence", "P569": "date of birth", "P570": "date of death",
+                                    "P571": "inception", "P576": "dissolved, abolished or demolished",
+                                    "P577": "publication date", "P580": "start time", "P582": "end time",
+                                    "P585": "point in time", "P607": "conflict", "P674": "characters",
+                                    "P676": "lyrics by", "P706": "located on terrain feature", "P710": "participant",
+                                    "P737": "influenced by", "P740": "location of formation",
+                                    "P749": "parent organization", "P800": "notable work", "P807": "separated from",
+                                    "P840": "narrative location", "P937": "work location",
+                                    "P1001": "applies to jurisdiction", "P1056": "product or material produced",
+                                    "P1198": "unemployment rate", "P1336": "territory claimed by",
+                                    "P1344": "participant of", "P1365": "replaces", "P1366": "replaced by",
+                                    "P1376": "capital of", "P1412": "languages spoken, written or signed",
+                                    "P1441": "present in work", "P3373": "sibling"}
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         list(relations_docred.values()), "strict")
             else:
-                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']], [item for pred in output for item in pred['labels']], ['killed by', 'residence', 'location', 'headquarters location', 'employer'])
+                scores, precision, recall, f1 = re_score([item for pred in output for item in pred['predictions']],
+                                                         [item for pred in output for item in pred['labels']],
+                                                         ['killed by', 'residence', 'location', 'headquarters location',
+                                                          'employer'])
             self.log('test_prec_micro', precision)
             self.log('test_recall_micro', recall)
             self.log('test_F1_micro', f1)
@@ -439,7 +554,7 @@ class BasePLModule(pl.LightningModule):
                 f = json.load(json_file)
                 for id_, row in enumerate(f):
                     key.append(' '.join(row['token']))
-            f = open('preds.jsonl','w')
+            f = open('preds.jsonl', 'w')
             preds_list = []
             labels_list = []
             i = 0
@@ -450,7 +565,7 @@ class BasePLModule(pl.LightningModule):
                     f.write(f'{pred[0]} \t {lab[0]} \n')
                     preds_list.append(pred[0]["type"])
                     labels_list.append(lab[0]["type"])
-                    i+=1
+                    i += 1
             f.close()
             prec_micro, recall_micro, f1_micro = score(labels_list, preds_list, verbose=True)
             self.log('test_prec_micro', prec_micro)
@@ -496,7 +611,7 @@ class BasePLModule(pl.LightningModule):
                 "betas": (self.hparams.adam_beta1, self.hparams.adam_beta2),
                 "eps": self.hparams.adam_epsilon,
             }
-        
+
         optimizer_kwargs["lr"] = self.hparams.learning_rate
 
         optimizer = optimizer_cls(optimizer_grouped_parameters, **optimizer_kwargs)
@@ -520,10 +635,10 @@ class BasePLModule(pl.LightningModule):
             )
         return scheduler
 
-
     def compute_metrics(self, preds, labels):
-        metric_name = "rouge" # if self.hparams.task.startswith("summarization") else "sacrebleu"
+        metric_name = "rouge"  # if self.hparams.task.startswith("summarization") else "sacrebleu"
         metric = load_metric(metric_name)
+
         def postprocess_text(preds, labels):
             preds = [pred.strip() for pred in preds]
             labels = [label.strip() for label in labels]
@@ -536,6 +651,7 @@ class BasePLModule(pl.LightningModule):
                 labels = [[label] for label in labels]
 
             return preds, labels
+
         # preds, labels = eval_preds
         if isinstance(preds, tuple):
             preds = preds[0]
@@ -560,4 +676,3 @@ class BasePLModule(pl.LightningModule):
         result["gen_len"] = np.mean(prediction_lens)
         result = {k: round(v, 4) for k, v in result.items()}
         return result
-

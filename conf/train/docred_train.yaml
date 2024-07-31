@@ -14,7 +14,7 @@ val_percent_check: 1.0
 monitor_var: 'val_F1_micro'
 monitor_var_mode: 'max'
 patience: 5
-model_name: 'docred'
+model_name: 'docred_type'
 save_top_k: 3
 
 # core
