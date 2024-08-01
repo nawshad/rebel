@@ -101,6 +101,7 @@ class BasePLModule(pl.LightningModule):
         self.tokenizer = tokenizer
         self.model = model
         self.config = config
+        # self.validation_step_outputs = []
         if self.model.config.decoder_start_token_id is None:
             raise ValueError("Make sure that `config.decoder_start_token_id` is correctly defined")
 
@@ -334,6 +335,7 @@ class BasePLModule(pl.LightningModule):
 
         outputs = {}
         outputs['predictions'], outputs['labels'] = self.generate_triples(batch, labels)
+        # self.validation_step_outputs.append(outputs)
         return outputs
 
     def test_step(self, batch: dict, batch_idx: int) -> None:
@@ -463,6 +465,7 @@ class BasePLModule(pl.LightningModule):
             self.log('val_prec_micro', precision)
             self.log('val_recall_micro', recall)
             self.log('val_F1_micro', f1)
+            # self.validation_step_outputs.clear()
         else:
             key = []
             preds_list = []
